@@ -17,10 +17,10 @@ namespace ToDoApi.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
+        [HttpGet("{id}",Name ="list")]
         public string Get(int id)
         {
-            return "value";
+            return "value is :-"+id;
         }
 
         // POST api/values
